@@ -10,8 +10,8 @@ import javax.swing.JLabel;
 class NewClock extends JFrame{
 
     private JLabel heading;
-     private JLabel ClockLocation;
-    private Font font = new Font("",Font.BOLD,40);
+    private JLabel ClockLocation;
+    Font font = new Font("",Font.BOLD,40);
 
     //In main class Constructor direct call when user create object.
     NewClock(){
@@ -38,6 +38,7 @@ class NewClock extends JFrame{
         heading.setFont(font);
 
         ClockLocation.setFont(font);
+        ClockLocation.setBounds(50, 10, 120, 120);
          //Creating two rows and one columns
         setLayout(new GridLayout(2,1));
 
@@ -64,6 +65,7 @@ class NewClock extends JFrame{
 
                     String datetime = SDF.format(d);
                     ClockLocation.setText(datetime);
+
 
                     Thread.sleep(1000);
                 }
