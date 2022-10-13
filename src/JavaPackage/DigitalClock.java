@@ -22,7 +22,7 @@ class NewClock extends JFrame{
         setLocation(400,100);
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+        getContentPane().setBackground(new Color(225, 219, 11));
         //Constructor direct call them after creating Object.
         GetGUI();
         ClockStart();
